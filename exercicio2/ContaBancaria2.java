@@ -40,6 +40,7 @@ public class ContaBancaria2{
 		obj1.imprimirContaCorrente();
 		obj1.imprimirSaldo();
 		obj1.imprimirTitular();
+		
 		double s1,s2;
 		s1 = obj1.saldo + obj1.limiteExtra;
 		s2 = obj2.saldo + obj2.limiteExtra;
