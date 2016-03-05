@@ -1,0 +1,1 @@
+A palavre chave new permite instânciar um objeto, ou seja, permite que seja criado um objeto com base em uma classe existente que faz referência a um local da memória que possui um valor. 
