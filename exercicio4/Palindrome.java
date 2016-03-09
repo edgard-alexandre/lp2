@@ -19,7 +19,7 @@ public class Palindrome{
 				if(teste.equals(reverso)){
 					z = b - 1;
 					System.out.println(" ");
-					System.out.println(" " + teste + "  " + "Posicao: " + ipos + -+ z);
+					System.out.println(" " + teste + "  " + "Posicao: " + ipos + "-" + z);
 					p = true;				
 				}
 			}
