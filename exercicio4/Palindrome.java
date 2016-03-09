@@ -8,7 +8,7 @@ public class Palindrome{
 		boolean p = false;
 		xtam = teste.length();	
 		tamString = teste.length();
-		while(xtam >= 1 && p == false){				
+		while(xtam > 1 && p == false){				
 			a = xtam;
 			for(ipos=0; ipos <= zvez; ipos++){	
 				b = ipos + a;		
@@ -25,6 +25,10 @@ public class Palindrome{
 			}
 			zvez++;
 			xtam--;
+		}
+		if(p == false){
+			System.out.println(" ");
+			System.out.println(" Nenhum palindrome foi encontrado.");
 		}
 	}
 }
