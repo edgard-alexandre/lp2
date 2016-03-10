@@ -4,7 +4,7 @@ public class Palindrome{
 		String palin;
 		String teste = parametro;
 		palin = teste;
-		int tamString,a,b,xtam,ipos,zvez=0,i,z;
+		int tamString,a,b,c,xtam,ipos,zvez=0;
 		boolean p = false;
 		xtam = teste.length();	
 		tamString = teste.length();
@@ -17,9 +17,9 @@ public class Palindrome{
 				sb.reverse();
 				String reverso = sb.toString();
 				if(teste.equals(reverso)){
-					z = b - 1;
+					c = b - 1;
 					System.out.println(" ");
-					System.out.println(" " + teste + "  " + "Posicao: " + ipos + "-" + z);
+					System.out.println(" " + teste + "  " + "Posicao: " + ipos + "-" + c);
 					p = true;				
 				}
 			}
