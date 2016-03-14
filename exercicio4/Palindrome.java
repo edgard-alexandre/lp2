@@ -1,26 +1,28 @@
 public class Palindrome{
 	public static void main(String[] args){
 		String parametro = args[0];		
-		String palin;
 		String teste = parametro;
+		String palin;
 		palin = teste;
 		int tamString,a,b,c,xtam,ipos,zvez=0;
 		boolean p = false;
 		xtam = teste.length();	
 		tamString = teste.length();
-		while(xtam > 1 && p == false){				
+		while(xtam > 4 && p == false){				
 			a = xtam;
 			for(ipos=0; ipos <= zvez; ipos++){	
-				b = ipos + a;		
-				teste = palin.substring(ipos,b); 
-				StringBuffer sb = new StringBuffer(teste);
-				sb.reverse();
-				String reverso = sb.toString();
-				if(teste.equals(reverso)){
-					c = b - 1;
-					System.out.println(" ");
-					System.out.println(" " + teste + "  " + "Posicao: " + ipos + "-" + c);
-					p = true;				
+				if(p == false){
+					b = ipos + a;		
+					teste = palin.substring(ipos,b); 
+					StringBuffer sb = new StringBuffer(teste);
+					sb.reverse();
+					String reverso = sb.toString();
+					if(teste.equals(reverso) && reverso.length() == 5){
+						c = b - 1;
+						System.out.println(" ");
+						System.out.println(" " + teste + "  " + "Posicao: " + ipos + "-" + c);
+						p = true;				
+					}
 				}
 			}
 			zvez++;
@@ -28,7 +30,7 @@ public class Palindrome{
 		}
 		if(p == false){
 			System.out.println(" ");
-			System.out.println(" Nenhum palindrome foi encontrado.");
+			System.out.println(" Nenhum palindrome de tamanho 5 foi encontrado.");
 		}
 	}
 }
