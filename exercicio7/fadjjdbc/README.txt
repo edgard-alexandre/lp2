@@ -1,1 +1,1 @@
-Feito por Vitor Melo e Caio Nogueira
+Feito por Edgard e Pedro
